@@ -1,79 +1,8 @@
 ```css
-/* Make the label container a flex box so it keeps a real size, 
-   and hide the original text by making it transparent. 
-   The min-height ensures it doesn't collapse on mobile. */
-.spaced-repetition__accuracy-buttons .accuracy-button .accuracy-button__label {
-  color: transparent !important;
-  position: relative;
-
-  display: flex;         /* This prevents the label from collapsing to zero size */
-  align-items: center;   /* Vertically centers any child elements */
-  justify-content: center; /* Horizontally centers if needed */
-
-  min-height: 1.5rem;    /* Keeps enough vertical space for the replacement text */
-}
-
-/* Use pseudo-elements (::after) to insert the new text 
-   for each button. Absolutely position the text at the center 
-   of the label, and use a z-index so it appears on top. */
-
-/* 1) Skip */
+/* Hide the SRS interval text on the buttons */
 .spaced-repetition__accuracy-buttons
-  .accuracy-button:nth-of-type(1) .accuracy-button__label::after {
-  content: "Skip";
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  z-index: 5;       /* Ensures the new label sits above other elements */
-  white-space: nowrap;
-}
-
-/* 2) Again */
-.spaced-repetition__accuracy-buttons
-  .accuracy-button:nth-of-type(2) .accuracy-button__label::after {
-  content: "Again";
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  z-index: 5;
-  white-space: nowrap;
-}
-
-/* 3) Hard */
-.spaced-repetition__accuracy-buttons
-  .accuracy-button:nth-of-type(3) .accuracy-button__label::after {
-  content: "Hard";
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  z-index: 5;
-  white-space: nowrap;
-}
-
-/* 4) Good */
-.spaced-repetition__accuracy-buttons
-  .accuracy-button:nth-of-type(4) .accuracy-button__label::after {
-  content: "Good";
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  z-index: 5;
-  white-space: nowrap;
-}
-
-/* 5) Easy */
-.spaced-repetition__accuracy-buttons
-  .accuracy-button:nth-of-type(5) .accuracy-button__label::after {
-  content: "Easy";
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  z-index: 5;
-  white-space: nowrap;
+  .accuracy-button
+  .accuracy-button__interval {
+  display: none !important;
 }
 ```
