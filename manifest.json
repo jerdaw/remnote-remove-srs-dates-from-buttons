@@ -1,0 +1,22 @@
+{
+    "manifestVersion": 1,
+    "id": "jerdaw-remnote-remove-srs-dates-from-buttons",
+    "name": "Remnote Remove SRS Dates from Buttons",
+    "author": "jerdaw",
+    "repoUrl": "https://github.com/jerdaw/remnote-remove-srs-dates-from-buttons",
+    "description": "Removes the SRS Dates from Remnote answer buttons",
+    "theme": [],
+    "enableOnMobile": true,
+    "version": {
+      "major": 0,
+      "minor": 1,
+      "patch": 0
+    },
+    "requestNative": false,
+    "requiredScopes": [
+      {
+        "type": "All",
+        "level": "Read"
+      }
+    ]
+  }
